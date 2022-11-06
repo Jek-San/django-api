@@ -1,1 +1,1 @@
-web: gunicorn django-api.wsgi
+web: gunicorn customers.wsgi
