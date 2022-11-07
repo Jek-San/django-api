@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-h@=^=(u)vl_(i*x&2j6na5bvgm2$kwlr$p4t1m8qb%@rnmjl6x
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -63,12 +63,8 @@ REST_FRAMEWORK = {
     )
 }
 
-CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://sub.example.com",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+CORS_ALLOWED_ORIGINS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
 from datetime import timedelta
 
 SIMPLE_JWT = {
